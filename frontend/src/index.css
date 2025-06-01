@@ -1,0 +1,7 @@
+/* src/index.css */
+
+/* Import Google Fonts for Playfair Display, Montserrat, and Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap');
+
+/* Import Tailwind CSS v4 */
+@import "tailwindcss";
