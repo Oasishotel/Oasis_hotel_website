@@ -5,7 +5,24 @@ import 'slick-carousel/slick/slick-theme.css';
 import testimonialBg from '../assets/testimonialimage.jpeg';
 
 const testimonials = [
-  // ... (testimonial data remains the same)
+  {
+    quote: "This is a great place to spend the night. It's reasonable, the reviews about good customer service are correct. My kids loved the pool. The breakfast is good. The room was clean and the beds were comfortable."
+  },
+  {
+    quote: "A great place to stay. Everything is freshly remodeled and clean. The service was kind and courteous. We would definitely stay again!"
+  },
+  {
+    quote: "This was my third stay here within a month and all the people working here are absolutely amazing and accommodating. They always helped me out when I needed something. Perfect. Perfect. Perfect."
+  },
+  {
+    quote: "Very friendly staff and nicely updated facilities. The continental breakfast was simple- toast, bagels, pancakes, eggs and sausage, plus beverages. Our stay was very quiet and peaceful."
+  },
+  {
+    quote: "The front desk lady was awesome. And the employee who got my Sour Patch Candy from the vending machine was a life saver. Will definitely stay again."
+  },
+  {
+    quote: "Breakfast was very good & much appreciated. Room was comfortable, clean, and quiet. Even the A/C was quieter than most."
+  }
 ];
 
 const Testimonial = () => {
