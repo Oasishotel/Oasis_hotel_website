@@ -2,11 +2,21 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import img1 from '../assets/relaxing_lobby.jpeg';
-import img2 from '../assets/King-Whirlpool-Room.jpg';
-import img3 from '../assets/wooden-texture.jpg.png';
-import img4 from '../assets/wooden-texture.jpg.png';
-import img5 from '../assets/King-Whirlpool-Room.jpg';
+import img1 from '../assets/QueenBed1.jpeg';
+import img2 from '../assets/QueenBed2.jpeg';
+import img3 from '../assets/QueenBed3.jpeg';
+import img4 from '../assets/kingBed1.jpeg';
+import img5 from '../assets/kingbed2.jpeg';
+import img6 from '../assets/DoubleQueen1.jpeg';
+import img7 from '../assets/DoubleQueen2.jpeg';
+import img8 from '../assets/DoubleQueen3.jpeg';
+import img9 from '../assets/DoubleQueen4.jpeg';
+import img10 from '../assets/OneKingBed1.jpeg';
+import img11 from '../assets/OneKingBed2.jpeg';
+import img12 from '../assets/OneKingBed3.jpeg';
+import img13 from '../assets/WhirlPool1.jpeg';
+import img14 from '../assets/WhirlPool2.jpeg';
+import img15 from '../assets/WhirlPool3.jpeg';
 
 const rooms = [
   {
@@ -16,22 +26,22 @@ const rooms = [
   },
   {
     name: 'One King Bed',
-    images: [img2, img3, img4],
+    images: [img4, img5],
     description: 'This inviting room boasts a comfortable King Bed, complimentary Wi-Fi, free local calls, a well-appointed desk with a chair, and essential amenities including a phone, refrigerator, coffeemaker, hairdryer, iron/ironing board, and an alarm clock. Take control of your comfort with the self-regulated AC/Heat system, and ensure a timely start to your day with the convenient wake-up call services.'
   },
   {
     name: 'Double Queen Family Suite',
-    images: [img3, img4, img5],
+    images: [img6, img7, img8,img9],
     description: 'Spacious suite featuring two Queen beds, a pull out loveseat, complimentary Wi-Fi, and free local calls. The room is equipped with a desk and chair, Jet Shower, and phone. Additionally, enjoy the convenience of a full kitchenette complete with cabinetry, refrigerator, and coffeemaker. For added convenience, amenities such as a hairdryer, iron/ironing board, and an alarm clock are provided. Take control of your well-being with the self-controlled AC/Heat system, ensuring a soothing stay.'
   },
   {
     name: 'One King Bed Accessible',
-    images: [img4, img5, img1],
+    images: [img10, img11, img12],
     description: 'Accessible Room with 1 King Bed offers complimentary Wi-Fi, free local calls, a desk with a chair, and essential amenities like a phone, refrigerator, coffeemaker, hairdryer, iron/ironing board, and an alarm clock. Guests can regulate their own comfort with the self-controlled AC/Heat system, and wake up promptly with the available wake-up call services.'
   },
   {
     name: 'King Suite Whirlpool',
-    images: [img5, img1, img2],
+    images: [img13, img14, img15],
     description: 'This suite features a luxurious King Bed, complimentary Wi-Fi, free local calls, a desk with a chair, and a relaxing whirlpool. Additionally, amenities include a phone, refrigerator, coffeemaker, hairdryer, iron/ironing board, and an alarm clock. Guests can manage their own climate with the self-controlled AC/Heat system, and enjoy the convenience of wake-up call services.'
   },
 ];
