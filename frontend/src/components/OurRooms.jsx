@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -36,7 +36,18 @@ const rooms = [
   },
 ];
 
-const OurRooms = () => {
+const OurRooms = ({ id }) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -45,7 +56,7 @@ const OurRooms = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: window.innerWidth > 768, // Show arrows only on desktop
+    arrows: windowWidth > 768, // Show arrows only on desktop
     appendDots: dots => (
       <div className="absolute bottom-4 w-full text-center">
         <ul className="m-0 p-0 list-none inline-flex"> {dots} </ul>
@@ -65,7 +76,7 @@ const OurRooms = () => {
   };
 
   return (
-    <section className="bg-[#F8F1E5] py-12 sm:py-16 lg:py-20 px-4 sm:px-[5%] min-h-screen">
+    <section id={id} className="bg-[#F8F1E5] py-12 sm:py-16 lg:py-20 px-4 sm:px-[5%] min-h-screen">
       <div className="md:flex md:items-start md:gap-8 max-w-7xl mx-auto">
         {/* Left Column - Text Content */}
         <div className="md:w-1/3 md:sticky md:top-0 p-4 mb-8 md:mb-0">

@@ -15,9 +15,9 @@ const amenitiesList = [
   'Fitness Center',
 ];
 
-const Amenities = () => {
+const Amenities = ({ id }) => {
   return (
-    <section className="bg-white py-8 sm:py-12 lg:py-20 px-[5%]">
+    <section id={id} className="bg-white py-8 sm:py-12 lg:py-20 px-[5%]">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-12">
           {/* Left Column: Overlapping Image with Wooden Texture */}
