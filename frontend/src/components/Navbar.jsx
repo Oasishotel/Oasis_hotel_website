@@ -1,5 +1,5 @@
-// src/components/Navbar.jsx
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
@@ -9,13 +9,22 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="flex flex-col sm:flex-row justify-between items-center py-3 sm:py-5 px-4 sm:px-10 bg-transparent absolute w-full top-0 z-10 shadow-sm">
       {/* Logo and Hamburger for Mobile */}
       <div className="flex justify-between items-center w-full sm:w-auto">
-        <div>
+        <Link 
+          to="#hero" 
+          onClick={closeMenu}
+          className="focus:outline-none"
+        >
           <img src={logo} alt="The Oasis Logo" className="h-[40px] sm:h-[50px]" />
-        </div>
+        </Link>
+        
         {/* Hamburger Menu for Mobile */}
         <button
           className="sm:hidden text-white focus:outline-none"
@@ -46,36 +55,40 @@ const Navbar = () => {
         }`}
       >
         <li>
-          <a
-            href="#about"
+          <Link
+            to="#about"
+            onClick={closeMenu}
             className="text-[#B0B0B0] no-underline hover:text-[#D4A373] transition-colors duration-300 block sm:inline-block py-2 sm:py-0"
           >
             About Us
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#rooms"
+          <Link
+            to="#rooms"
+            onClick={closeMenu}
             className="text-[#B0B0B0] no-underline hover:text-[#D4A373] transition-colors duration-300 block sm:inline-block py-2 sm:py-0"
           >
             Our Rooms
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#amenities"
+          <Link
+            to="#amenities"
+            onClick={closeMenu}
             className="text-[#B0B0B0] no-underline hover:text-[#D4A373] transition-colors duration-300 block sm:inline-block py-2 sm:py-0"
           >
             Amenities
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#contact"
+          <Link
+            to="#contact"
+            onClick={closeMenu}
             className="text-[#B0B0B0] no-underline hover:text-[#D4A373] transition-colors duration-300 block sm:inline-block py-2 sm:py-0"
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
 

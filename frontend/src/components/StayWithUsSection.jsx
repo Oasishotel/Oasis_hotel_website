@@ -4,9 +4,9 @@ import frontDeskImage from '../assets/Front-desk-980x735.webp';
 import lobbyImage from '../assets/relaxing_lobby.jpeg';
 import breakfastImage from '../assets/Lobby-Vending-980x552.webp';
 
-const StayWithUs = () => {
+const StayWithUs = ({ id }) => {
   return (
-    <section className="relative bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-[5%]">
+    <section id={id} className="relative bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-[5%]">
       {/* Decorative border */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D4A373] via-[#E8D5B5] to-[#D4A373]"></div>
       

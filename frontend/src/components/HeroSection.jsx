@@ -1,27 +1,21 @@
-// src/components/HeroSection.jsx
 import React from 'react';
 import backgroundImage from '../assets/background.jpg.jpg';
 import woodenTexture from '../assets/wooden-texture.jpg.png';
 import roomImage from '../assets/King-Whirlpool-Room.jpg';
 
-const HeroSection = () => {
+const HeroSection = ({ id }) => {
   return (
     <section
+      id={id}
       className="relative flex flex-col sm:flex-row items-start justify-center gap-4 sm:gap-8 md:gap-12 h-[120vh] sm:h-[100vh] px-[3%] sm:px-[5%] bg-cover bg-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Dark Overlay */}
-      <div
-        className="absolute inset-0 bg-black/50 z-[1]"
-      ></div>
+      <div className="absolute inset-0 bg-black/50 z-[1]"></div>
 
       {/* Left Side: Text Content */}
-      <div
-        className="w-full sm:w-[55%] text-white z-[2] mt-[80px] sm:mt-[120px] md:mt-[150px]"
-      >
-        <h1
-          className="font-['Playfair_Display',_serif] font-bold text-[32px] sm:text-[40px] md:text-[48px] leading-tight"
-        >
+      <div className="w-full sm:w-[55%] text-white z-[2] mt-[80px] sm:mt-[120px] md:mt-[150px]">
+        <h1 className="font-['Playfair_Display',_serif] font-bold text-[32px] sm:text-[40px] md:text-[48px] leading-tight">
           The Oasis Hotel in Sheboygan Falls, WI
         </h1>
         <h2 className="mb-3 sm:mb-5">
@@ -45,9 +39,7 @@ const HeroSection = () => {
       </div>
 
       {/* Right Side: Wooden Texture with Room Image */}
-      <div
-        className="w-[80%] sm:w-[50%] md:w-[35%] h-[40%] sm:h-[50%] md:h-[60%] relative overflow-visible mt-6 sm:mt-[120px] md:mt-[150px] mx-auto sm:mx-0"
-      >
+      <div className="w-[80%] sm:w-[50%] md:w-[35%] h-[40%] sm:h-[50%] md:h-[60%] relative overflow-visible mt-6 sm:mt-[120px] md:mt-[150px] mx-auto sm:mx-0">
         <div
           className="absolute w-full h-full right-0 z-[1] bg-[#A68B5A] bg-cover bg-center opacity-90"
           style={{

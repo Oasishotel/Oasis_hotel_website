@@ -2,9 +2,10 @@ import React from 'react';
 import logo from '../assets/logo.png';
 import contactImage from '../assets/contact_image.jpeg';
 
-const ContactUsSection = () => {
+const ContactUsSection = ({ id }) => {
   return (
     <section
+      id={id}
       className="relative flex items-center justify-center min-h-screen bg-cover bg-center px-4 py-12 sm:px-6 lg:px-8"
       style={{ backgroundImage: `url(${contactImage})` }}
     >
