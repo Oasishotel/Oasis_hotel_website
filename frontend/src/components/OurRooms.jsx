@@ -211,4 +211,5 @@ const OurRooms = ({ id }) => {
   );
 };
 
+// demo content
 export default OurRooms;
