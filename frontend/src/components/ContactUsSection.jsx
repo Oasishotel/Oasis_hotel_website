@@ -13,7 +13,6 @@ const ContactUsSection = ({ id }) => {
 
       <div className="relative z-10 bg-black/70 rounded-lg py-8 px-6 sm:py-12 sm:px-8 md:px-12 lg:px-16 max-w-6xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 border-b-[8px] border-[#D4A373]">
   
-        {/* Logo - Full width on mobile, then normal flow */}
         <div className="flex items-center justify-center sm:col-span-2 lg:col-span-1 order-1">
           <img src={logo} alt="The Oasis Logo" className="h-[80px] sm:h-[100px]" />
         </div>
